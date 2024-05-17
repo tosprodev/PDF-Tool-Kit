@@ -34,6 +34,8 @@ To use PDF Tool Kit in normal mode, simply double-click on the `pdftoolkit.exe` 
 
 PDF Tool Kit also supports silent mode for automated operations. Below are examples of using different operations in silent mode:
 
+`-ct or --ct` Use for clear temp folder after process completed
+ 
 1. **Image to PDF Conversion:**
 
    ```bash
