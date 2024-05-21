@@ -34,7 +34,11 @@ To use PDF Tool Kit in normal mode, simply double-click on the `pdftoolkit.exe` 
 
 PDF Tool Kit also supports silent mode for automated operations. Below are examples of using different operations in silent mode:
 
-`-ct or --ct` Use for clear temp folder after process completed
+`-s or --s` use for silent use.
+`-opt or --opt` Use for option switch for task.
+`-o or --o` Use for output folder where your output file will save.
+`-temp or -temp` User for temp folder where your source file exist.
+`-ct or --ct` Use -ct True for clear temp folder after process completed.
  
 1. **Image to PDF Conversion:**
 
