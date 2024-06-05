@@ -13,6 +13,9 @@ PDF Tool Kit is a versatile Python-based command-line application that provides 
 - **Update Checker:** Check for updates to the application.
 - **Settings Menu:** Configure application settings.
 - **Help Menu:** Display usage guidance and instructions.
+- **PDF Password Protection:** Encrypt PDF files with passwords for added security.
+- **PDF Decryption:** Decrypt password-protected PDF files.
+- **More Tools:** Explore additional functionalities and tools for PDF manipulation.
 
 ## Installation
 
@@ -34,16 +37,14 @@ To use PDF Tool Kit in normal mode, simply double-click on the `pdftoolkit.exe` 
 
 PDF Tool Kit also supports silent mode for automated operations. Below are examples of using different operations in silent mode:
 
-`-s or --s` use for silent use.
+- `-s` or `--s`: Use for silent use.
+- `-opt` or `--opt`: Use for option switch for the task.
+- `-o` or `--o`: Use for the output folder where your output file will save.
+- `-temp` or `-temp`: Use for the temp folder where your source file exists.
+- `-ct` or `--ct`: Use `-ct True` for clearing the temp folder after the process is completed.
 
-`-opt or --opt` Use for option switch for task.
+#### Examples:
 
-`-o or --o` Use for output folder where your output file will save.
-
-`-temp or -temp` User for temp folder where your source file exist.
-
-`-ct or --ct` Use -ct True for clear temp folder after process completed.
- 
 1. **Image to PDF Conversion:**
 
    ```bash
@@ -98,7 +99,31 @@ PDF Tool Kit also supports silent mode for automated operations. Below are examp
    pdftoolkit.exe -s --opt 9
    ```
 
+10. **PDF Password Protection:**
+
+   ```bash
+   pdftoolkit.exe -s --opt 10 -temp /path/to/temp_folder -o /path/to/output_folder -oo -ct -p "your_password"
+   ```
+
+11. **PDF Decryption:**
+
+   ```bash
+   pdftoolkit.exe -s --opt 11 -temp /path/to/temp_folder -o /path/to/output_folder -oo -ct -p "your_password"
+   ```
+
 Replace `/path/to/temp_folder` and `/path/to/output_folder` with the actual paths where you want to store temporary files and output files, respectively. Adjust other options as needed.
+
+## More Tools
+
+PDF Tool Kit offers additional tools for advanced PDF manipulation. These tools include:
+
+- **PDF Metadata Editor:** Modify metadata (such as author, title, subject, keywords) of PDF files.
+- **PDF Page Rotation:** Rotate pages of PDF documents to desired orientations.
+- **PDF Page Extraction:** Extract specific pages or ranges of pages from PDF files.
+- **PDF Text Extraction:** Extract text content from PDF files for further processing.
+- **PDF Watermarking:** Add watermarks (text or image) to PDF pages for branding or security purposes.
+
+Explore these tools further by using the corresponding options in silent mode or interactive mode.
 
 ## Contributing
 
